@@ -7,25 +7,29 @@ import Project from "./Project";
 import Home from "./Home";
 import Header from "./Header";
 import { createGlobalStyle } from "styled-components";
+import enTranslations from "@shopify/polaris/locales/en.json";
+
+import { AppProvider, Button } from "@shopify/polaris";
 
 function App() {
   return (
     <div className="App">
-      <GlobalStyles></GlobalStyles>
-      test
-      <Router>
-        <div>
-          <Header></Header>
-          <Switch>
-            <Route exact path="/project">
-              <Project />
-            </Route>
-            <Route exact path="/">
-              <Home />
-            </Route>
-          </Switch>
-        </div>
-      </Router>
+      <AppProvider i18n={enTranslations}>
+        <GlobalStyles></GlobalStyles>
+        <Router>
+          <div>
+            <Header></Header>
+            <Switch>
+              <Route exact path="/project">
+                <Project />
+              </Route>
+              <Route exact path="/">
+                <Home />
+              </Route>
+            </Switch>
+          </div>
+        </Router>
+      </AppProvider>
     </div>
   );
 }
@@ -46,7 +50,7 @@ nav
 
 }
 
-Link{
+/* Link{
   padding-right: 0px;
   color:green;
   font-size: 50px;
@@ -55,7 +59,7 @@ Link{
     text-decoration: none;
   }
 
-}
+} */
 
 /* adopted from https://polaris.shopify.com/design/typography#section-display-styles */
 

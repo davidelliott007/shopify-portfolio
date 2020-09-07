@@ -1,14 +1,234 @@
 import React from "react";
+import styled from "styled-components";
+
+import DaveSrc from "./images/self_portfolio.jpg"; // Tell webpack this JS file uses this image
+import {
+  AiFillGithub,
+  AiFillTwitterCircle,
+  AiFillInstagram,
+  AiFillLinkedin,
+} from "react-icons/ai";
 
 function Home() {
   console.log("About");
 
   return (
-    <displayXlarge>
-      test home page Hi Shopify! I'd really like to join the team. Let me tell
-      you why:{" "}
-    </displayXlarge>
+    <HomeWrapper>
+      <IntroStatement>
+        <displayXlarge>
+          Hey there - I'm <NameText> Dave Elliott,</NameText> and I'm determined
+          to start an internship at Shopify in January.
+        </displayXlarge>
+      </IntroStatement>
+      <ItemDetailsImage image_source={DaveSrc}>
+        <ProfileButtons>
+          <ProfileButton>
+            <AiFillGithub size={40} style={{ verticalAlign: "middle" }} />
+          </ProfileButton>
+          <ProfileButton>
+            <AiFillTwitterCircle
+              size={40}
+              style={{ verticalAlign: "middle" }}
+            />
+          </ProfileButton>
+
+          <ProfileButton>
+            <AiFillInstagram size={40} style={{ verticalAlign: "middle" }} />
+          </ProfileButton>
+          <ProfileButton>
+            <AiFillLinkedin size={40} style={{ verticalAlign: "middle" }} />
+          </ProfileButton>
+        </ProfileButtons>
+      </ItemDetailsImage>
+      <Pitch>
+        <TLDR>
+          <displayMedium>
+            TLDR ; Here's my
+            <TLDRBtn>App</TLDRBtn>
+            and this is my
+            <TLDRBtn>Story</TLDRBtn>.
+          </displayMedium>
+        </TLDR>
+        <Details>
+          <body>
+            Ok, so that's a big, literally bold statement...here's what
+            happened.
+          </body>
+          <body>
+            On September 25th, I attended a great online webinar that Paul gave.
+            I got to meet some of the team, and hear about the day to day at
+            Shopify, and it convinced me that I should apply for the January
+            internship program.
+          </body>
+          <body>
+            Since then, I've been coding up a cool personal project to include
+            with my application.
+          </body>
+
+          <displayMedium>
+            My Application Project : Shopify Masters Podcast++{" "}
+          </displayMedium>
+          <body>
+            Podcasting is a passion of mine, so I thought I would would take the
+            great Shopify Masters podcast and see if I could add some value to
+            it.
+          </body>
+          <ambitiousText>
+            I deciced to try something ambitious - could I produce an
+            interactive french version of the podcast?
+          </ambitiousText>
+          <body>I sat down and figured out what I would need to do -</body>
+          <ul>
+            <li>
+              Align the text transcript to the timeline of the mp3 with a cool
+              tool called Gengle Aligner, to figure out where each sentence
+              occurs in the waveform.
+            </li>
+            <li>
+              Translate the english transcript using the Google Language API.
+            </li>
+            <li>
+              Combined the aligned english text with the french text, to produce
+              a bilingual JSON array.
+            </li>
+            <li>Use that array as a navigation instrument for the mp3.</li>
+          </ul>
+          <displayMedium>
+            It took a lot of hacking away, but here it is - A super snazzy
+            clickable React App that let's you hear each speaker in English, and
+            then in French!
+          </displayMedium>
+        </Details>
+      </Pitch>
+    </HomeWrapper>
   );
 }
 
+const shiftedBody = styled.body``;
+const Pitch = styled.div`
+  padding-top: 20px;
+  max-width: 800px;
+`;
+
+const ambitiousText = styled.div`
+  background-color: red;
+  margin-left: 8px;
+`;
+
+const Details = styled.div`
+  padding-top: 40px;
+  margin-left: -8px;
+`;
+
+const TLDR = styled.div`
+  /* background-color: #f4f6f8;
+  border-radius: 15px; */
+`;
+
+const HomeWrapper = styled.div`
+  padding: 20px;
+`;
+const iconsize = styled.button`
+  height: 200px;
+  width: 200px;
+`;
+
+const ProfileButton = styled.button`
+  background-color: transparent;
+  color: #e0f5f5;
+  :hover {
+    cursor: pointer;
+  }
+  vertical-align: middle;
+  padding: 2px;
+  align-self: left;
+  width: 50px;
+  margin-bottom: 10px;
+`;
+
+const TLDRBtn = styled.button`
+  color: #00848e;
+  background-color: transparent;
+  font-size: 42px;
+  line-height: 44px;
+  font-weight: 500;
+
+  padding-left: 5px;
+  padding-right: 5px;
+  border: 1px dashed #003135;
+  padding-bottom: 5px;
+  padding-top: 0px;
+  margin-right: 5px;
+  margin-left: 5px;
+
+  @media (max-width: 800px) {
+    font-size: 27px;
+    line-height: 36px;
+    font-weight: 500;
+  }
+  :hover {
+    cursor: pointer;
+  }
+`;
+
+const Button1 = styled.button`
+  background-color: transparent;
+  color: black;
+  :hover {
+    cursor: pointer;
+  }
+  vertical-align: middle;
+  padding: 2px;
+  align-self: left;
+  width: 150px;
+  height: 150px;
+`;
+
+const ProfileButtons = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 10px;
+`;
+
+const ItemDetailsImage = styled.div`
+  background-image: url("${(props) => props.image_source}");
+  height: 300px;
+  max-width: 800px;
+
+  background-position: middle;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  border-radius: 15px;
+  border: none;
+  transition: all 0.4s ease-in-out;
+  z-index: 1;
+
+  /* &:hover {
+    transform: scale(1.4);
+  } */
+`;
+
+const SellerImg = styled.img`
+  height: 25px;
+  width: 25px;
+  border-radius: 25px;
+  margin-right: 10px;
+`;
+
+const DaveImg = styled.img`
+  height: 300px;
+  margin: 15px;
+`;
+
+const IntroStatement = styled.div`
+  margin-bottom: 20px;
+`;
+
+const selfImg = styled.img``;
+
+const NameText = styled.text`
+  color: #00848e;
+`;
 export default Home;
