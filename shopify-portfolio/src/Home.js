@@ -23,20 +23,21 @@ function Home() {
       <ItemDetailsImage image_source={DaveSrc}>
         <ProfileButtons>
           <ProfileButton>
-            <AiFillGithub size={40} style={{ verticalAlign: "middle" }} />
+            <AiFillGithub size={50} style={{ verticalAlign: "middle" }} />
           </ProfileButton>
           <ProfileButton>
+            <AiFillLinkedin size={50} style={{ verticalAlign: "middle" }} />
+          </ProfileButton>
+
+          <ProfileButton>
             <AiFillTwitterCircle
-              size={40}
+              size={50}
               style={{ verticalAlign: "middle" }}
             />
           </ProfileButton>
 
           <ProfileButton>
-            <AiFillInstagram size={40} style={{ verticalAlign: "middle" }} />
-          </ProfileButton>
-          <ProfileButton>
-            <AiFillLinkedin size={40} style={{ verticalAlign: "middle" }} />
+            <AiFillInstagram size={50} style={{ verticalAlign: "middle" }} />
           </ProfileButton>
         </ProfileButtons>
       </ItemDetailsImage>
@@ -65,54 +66,81 @@ function Home() {
             with my application.
           </body>
 
-          <displayMedium>
-            My Application Project : Shopify Masters Podcast++{" "}
-          </displayMedium>
           <body>
             Podcasting is a passion of mine, so I thought I would would take the
             great Shopify Masters podcast and see if I could add some value to
             it.
           </body>
-          <ambitiousText>
-            I deciced to try something ambitious - could I produce an
-            interactive french version of the podcast?
-          </ambitiousText>
+          <body>
+            <StandOutBox>
+              <StandOut>
+                I deciced to try something ambitious - could I produce an
+                interactive french version of the podcast using NodeJS, React
+                and Redux?
+              </StandOut>
+            </StandOutBox>
+          </body>
+          <body>
+            I wanted an interactive transcript that would offer french
+            translations, line per line, that I could skip if I wanted to, but
+            hear repeated back to me as well.
+          </body>
+
           <body>I sat down and figured out what I would need to do -</body>
-          <ul>
+          <ol>
             <li>
               Align the text transcript to the timeline of the mp3 with a cool
               tool called Gengle Aligner, to figure out where each sentence
-              occurs in the waveform.
+              occurs in the waveform. This would give me a JSON Object with each
+              word of the transcript aligned to a timecode.
             </li>
             <li>
-              Translate the english transcript using the Google Language API.
+              Translate the english transcript using the Google Language API to
+              produce a french transcript with Node JS.
             </li>
             <li>
-              Combined the aligned english text with the french text, to produce
-              a bilingual JSON array.
+              Combine the aligned english text from (1) with the french text
+              from (2) to produce a bilingual JSON array.
             </li>
             <li>Use that array as a navigation instrument for the mp3.</li>
-          </ul>
-          <displayMedium>
-            It took a lot of hacking away, but here it is - A super snazzy
-            clickable React App that let's you hear each speaker in English, and
-            then in French!
-          </displayMedium>
+            <li>Wire it all up in React and Redux.</li>
+          </ol>
+          <ApplicationHeadline>
+            <displayMedium>
+              It took a lot of hacking away, but here it is - A super snazzy
+              clickable React App that let's you hear each speaker in English,
+              and then in French!
+            </displayMedium>
+          </ApplicationHeadline>
         </Details>
       </Pitch>
+      GIF OF APP HERE STORY POINTS HERE
     </HomeWrapper>
   );
 }
 
+const ApplicationHeadline = styled.div`
+  margin-left: 7px;
+`;
 const shiftedBody = styled.body``;
 const Pitch = styled.div`
   padding-top: 20px;
   max-width: 800px;
 `;
 
+const StandOut = styled.div`
+  font-weight: bold;
+  color: black;
+  background-color: #e0f5f5;
+  padding: 5px;
+`;
+
+const StandOutBox = styled.div`
+  padding: 10px;
+`;
+
 const ambitiousText = styled.div`
-  background-color: red;
-  margin-left: 8px;
+  color: red;
 `;
 
 const Details = styled.div`
