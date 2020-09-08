@@ -83,7 +83,11 @@ function Home() {
             On September 25th, I attended a great webinar that Paul and his
             colleagues delivered. I got to meet some of the Shopify team, and
             hear about the day-to-day at Shopify, and it convinced me that I
-            should apply for the January internship program.
+            should apply for the January internship program. Shopify seems to be
+            the kind place where I can make an important contribution while my
+            skills are growing, and as someone who is in the middle of his
+            career, I'm super interested in joining a culture that invests in
+            people.
           </body>
           <body>
             I've been taking a coding bootcamp class at Concordia since March,
@@ -93,14 +97,14 @@ function Home() {
           </body>
           <body>
             Supporting the Podcast industry is a passion of mine, so I thought I
-            would would take the great Shopify Masters podcast and see if I
-            could add some value to it.
+            would take the great Shopify Masters podcast and see if I could add
+            some value to it.
           </body>
           <body>
             <StandOutBox>
               <StandOut>
-                I deciced to try something ambitious - could I produce an
-                interactive french version of the podcast using NodeJS, React
+                I decided to try something a little ambitious - could I produce
+                an interactive french version of the podcast using NodeJS, React
                 and Redux?
               </StandOut>
             </StandOutBox>
@@ -192,7 +196,7 @@ function Home() {
         </body>
         <body>
           Oh, and I made a bit of a subtle design choice ☝️ with the links to my
-          stuff kind of emeshed in my profile picture, so here it is again!
+          stuff kind of enmeshed in my profile picture, so here it is again!
         </body>
         <FinalButtons>
           <ProfileButtonInSentence onClick={goToGitHub}>
