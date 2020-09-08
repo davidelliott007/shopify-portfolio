@@ -77,8 +77,8 @@ function Home() {
         </TLDR>
         <Details>
           <body>
-            Ok, so that's stuff up there is literally a bold statement, and a
-            bit on the nose, as it were. Let me explain....
+            Ok, so that stuff up there is literally a bold statement, and a bit
+            on the nose, as it were. Let me explain....
           </body>
           <body>
             On September 25th, I attended a great webinar that Paul and his
