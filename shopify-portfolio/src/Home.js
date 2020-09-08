@@ -186,7 +186,8 @@ function Home() {
             This will be my graduation project for my Bootcamp, so I intend to
             expand it quite a bit! There's no reason I can't add more languages,
             or explore searching the text, or add meta-data from others APIs,
-            etc.
+            etc. I'll be graduating at the end of November, so I'll be adding to
+            this project on ongoing basis!
           </li>
         </ol>
       </Tidbits>
