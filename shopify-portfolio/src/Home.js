@@ -386,7 +386,7 @@ const ItemDetailsImage = styled.div`
   height: 300px;
   max-width: 800px;
 
-  background-position: right center;
+  background-position: right;
   background-size: cover;
   background-repeat: no-repeat;
 
@@ -396,7 +396,8 @@ const ItemDetailsImage = styled.div`
   z-index: 1;
 
   @media (max-width: 800px) {
-    /* background-image: url("${(props) => props.smaller_source}"); */
+    background-image: url("${(props) => props.smaller_source}");
+    background-position: center;
   }
 `;
 
