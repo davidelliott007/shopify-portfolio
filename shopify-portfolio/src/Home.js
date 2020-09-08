@@ -105,16 +105,30 @@ function Home() {
             <li>Use that array as a navigation instrument for the mp3.</li>
             <li>Wire it all up in React and Redux.</li>
           </ol>
-          <ApplicationHeadline>
-            <displayMedium>
+          <body>
+            <FinalStandOut>
               It took a lot of hacking away, but here it is - A super snazzy
               clickable React App that let's you hear each speaker in English,
               and then in French!
-            </displayMedium>
-          </ApplicationHeadline>
+            </FinalStandOut>
+          </body>
         </Details>
       </Pitch>
-      GIF OF APP HERE STORY POINTS HERE
+      Some other interesting tidbits behind the making of this app -
+      <ol>
+        <li>I'm running my own Node Express server to serve out the data.</li>
+        <li>
+          The app uses the SpeechSynthesis feature of modern desktop browsers -
+          so a mobile version of the app would require a different strategy (I'm
+          thinking of just recording a web speech synth version right from the
+          browser output and serving out a seperate MP3 for mobile)
+        </li>
+
+        <li>
+          GIF OF APP HERE STORY POINTS HERE HERE IS A TIME-LOCKED VERSION AS OF
+          SEPT 8, 9 AM HERE IS WHAT I'VE BEEN IMRPOVING ON IT SINCE THEN
+        </li>
+      </ol>
     </HomeWrapper>
   );
 }
@@ -126,6 +140,11 @@ const shiftedBody = styled.body``;
 const Pitch = styled.div`
   padding-top: 20px;
   max-width: 800px;
+`;
+
+const FinalStandOut = styled.div`
+  font-weight: bold;
+  color: black;
 `;
 
 const StandOut = styled.div`

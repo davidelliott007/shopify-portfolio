@@ -1,2 +1,14 @@
 ok, so these are the notes for the portfolio site.
 
+
+
+TODO: I'm running a netlify version of this page, but it actually all exists on my own server.  
+
+I opted for netflify because I don't trust my devops skills to guarantee that my tiny Linode server isn't going to crash out.
+
+Focus - what's next.
+
+Practice deploying a react app with routes.  
+
+Actually, deploy your front end page.
+
