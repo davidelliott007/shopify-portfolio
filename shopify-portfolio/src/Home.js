@@ -145,7 +145,7 @@ function Home() {
               <TLDRBtnSmaller onClick={goToNetlifyProject}>
                 here it is{" "}
               </TLDRBtnSmaller>
-              - A clickable React App that allows you to hear each speaker in
+              - a clickable React App that allows you to hear each speaker in
               English, and then in French. All automatically generated!
             </FinalStandOut>
           </body>
