@@ -5,7 +5,6 @@ import DaveSrc from "./images/self_portfolio.jpg"; // Tell webpack this JS file 
 import {
   AiFillGithub,
   AiFillTwitterCircle,
-  AiFillInstagram,
   AiFillLinkedin,
 } from "react-icons/ai";
 
@@ -195,7 +194,7 @@ function Home() {
           little bit of my thinking. It was super fun to put this together!
         </body>
         <body>
-          Oh, and I made a bit of a subtle design choice ☝️ with the links to my
+          Oh, and I made a bit of a subtle design choice with the links to my
           stuff kind of enmeshed in my profile picture, so here it is again!
         </body>
         <FinalButtons>
