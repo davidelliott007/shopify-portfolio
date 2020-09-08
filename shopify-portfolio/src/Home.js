@@ -1,6 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 
+import DaveSrcSquare from "./images/self_square.jpg"; // Tell webpack this JS file uses this image
+
 import DaveSrc from "./images/self_portfolio.jpg"; // Tell webpack this JS file uses this image
 import {
   AiFillGithub,
@@ -41,7 +43,7 @@ function Home() {
           determined to start an internship at Shopify in January.
         </displayXlarge>
       </IntroStatement>
-      <ItemDetailsImage image_source={DaveSrc}>
+      <ItemDetailsImage image_source={DaveSrc} smaller_source={DaveSrcSquare}>
         <ProfileButtons>
           <ProfileButton onClick={goToGitHub}>
             <AiFillGithub size={50} style={{ verticalAlign: "middle" }} />
@@ -384,14 +386,18 @@ const ItemDetailsImage = styled.div`
   height: 300px;
   max-width: 800px;
 
-  background-position: middle;
+  background-position: right center;
   background-size: cover;
   background-repeat: no-repeat;
 
   border-radius: 15px;
   border: none;
-  transition: all 0.4s ease-in-out;
+  transition: all 0.1s ease-in-out;
   z-index: 1;
+
+  @media (max-width: 800px) {
+    /* background-image: url("${(props) => props.smaller_source}"); */
+  }
 `;
 
 const IntroStatement = styled.div`
