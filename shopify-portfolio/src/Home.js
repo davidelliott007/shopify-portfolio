@@ -384,7 +384,7 @@ const ItemDetailsImage = styled.div`
   height: 300px;
   max-width: 800px;
 
-  background-position: middle;
+  background-position: right center;
   background-size: cover;
   background-repeat: no-repeat;
 
