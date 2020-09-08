@@ -24,3 +24,10 @@ Bonus App work once everything is done - searching.
 Deploy previews in netlify?
 
 TELL THE STORY OF THE APP!  THIS IS THE MOST IMPORANT!!
+
+
+Actual TODOS
+Link up all the buttons in the portfolio
+
+
+LINK TO YOUR LINKED IN ON DAVE ELLIOTT IN TITLE.

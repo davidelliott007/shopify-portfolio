@@ -9,6 +9,10 @@ import {
   AiFillLinkedin,
 } from "react-icons/ai";
 
+function goToLink() {
+  window.location.href = "http://google.com";
+}
+
 function Home() {
   console.log("About");
 
@@ -45,13 +49,14 @@ function Home() {
         <TLDR>
           <displayMedium>
             TLDR ; Here's my
-            <TLDRBtn>App</TLDRBtn>
+            <TLDRBtn onClick={goToLink}>App</TLDRBtn>
             and this is my
             <TLDRBtn>Story</TLDRBtn>.
           </displayMedium>
         </TLDR>
         <Details>
           <body>
+            <a href={"https://www.google.com"}>google</a>
             Ok, so that's a big, literally bold statement...here's what
             happened.
           </body>
@@ -173,12 +178,17 @@ const ProfileButton = styled.button`
   color: #e0f5f5;
   :hover {
     cursor: pointer;
+    color: #47c1bf;
+  }
+  :focus {
+    outline: none;
   }
   vertical-align: middle;
   padding: 2px;
   align-self: left;
   width: 50px;
   margin-bottom: 10px;
+  border: 0px;
 `;
 
 const TLDRBtn = styled.button`
@@ -230,6 +240,7 @@ const ItemDetailsImage = styled.div`
 
 const IntroStatement = styled.div`
   margin-bottom: 20px;
+  max-width: 800px;
 `;
 
 const NameText = styled.text`
