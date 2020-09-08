@@ -167,12 +167,13 @@ function Home() {
                 "https://developer.mozilla.org/en-US/docs/Web/API/SpeechSynthesis"
               }
             >
-              SpeechSynthesis
-            </a>{" "}
-            feature of modern desktop browsers - so a mobile version of the app
-            would require a different strategy (I'm thinking of just recording a
-            web speech synth version right from the browser output and serving
-            out a seperate MP3 for mobile apps).
+              SpeechSynthesis framework
+            </a>
+            ,
+            <strike> which is a feature of modern desktop browsers only</strike>{" "}
+            - yeah, I was wrong here. There are a few differences in player
+            permissions and voices arrays, but it totally works on mobile.
+            Coding up that version as we speak.
           </li>
 
           <li>
