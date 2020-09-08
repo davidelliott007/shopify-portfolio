@@ -1,15 +1,13 @@
 import React from "react";
-import logo from "./logo.svg";
 import "./App.css";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import styled from "styled-components";
 import Project from "./Project";
 import Home from "./Home";
 import Header from "./Header";
 import { createGlobalStyle } from "styled-components";
 import enTranslations from "@shopify/polaris/locales/en.json";
 
-import { AppProvider, Button } from "@shopify/polaris";
+import { AppProvider } from "@shopify/polaris";
 
 function App() {
   return (
@@ -171,19 +169,7 @@ font-weight: 400;
 
 
 
-button
-  {
-  background: blueviolet;
-  border: none;
-  padding: 16px 32px;
-  color: white;
-  font-size: 21px;
-  border-radius: 2px;
-  }
 
-  p {
-    line-height: 1.3;
-  }
 `;
 
 export default App;

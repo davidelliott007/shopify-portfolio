@@ -12,3 +12,15 @@ Practice deploying a react app with routes.
 
 Actually, deploy your front end page.
 
+Clean up Github - put a story on the GiHub page with ANCHOR - 
+
+
+App work - 
+Make the app look nicer - include a header with an image, the summary text of the app, the title of the podcast.  
+
+
+Bonus App work once everything is done - searching.
+
+Deploy previews in netlify?
+
+TELL THE STORY OF THE APP!  THIS IS THE MOST IMPORANT!!

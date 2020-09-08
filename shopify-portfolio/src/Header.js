@@ -1,11 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import { Link } from "react-router-dom";
-import {
-  AiFillGithub,
-  AiFillTwitterCircle,
-  AiFillInstagram,
-} from "react-icons/ai";
 function Header() {
   console.log("Header");
 
@@ -34,22 +28,8 @@ function Header() {
   );
 }
 
-const Button = styled.button`
-  background-color: transparent;
-  color: black;
-  :hover {
-    cursor: pointer;
-  }
-  vertical-align: middle;
-  padding: 2px;
-`;
-
 const Wrapper = styled.header`
   display: flex;
-`;
-
-const Title = styled.h1`
-  font-size: 32px;
 `;
 
 export default Header;

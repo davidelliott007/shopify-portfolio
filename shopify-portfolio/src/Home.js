@@ -133,10 +133,6 @@ function Home() {
   );
 }
 
-const ApplicationHeadline = styled.div`
-  margin-left: 7px;
-`;
-const shiftedBody = styled.body``;
 const Pitch = styled.div`
   padding-top: 20px;
   max-width: 800px;
@@ -158,10 +154,6 @@ const StandOutBox = styled.div`
   padding: 10px;
 `;
 
-const ambitiousText = styled.div`
-  color: red;
-`;
-
 const Details = styled.div`
   padding-top: 40px;
   margin-left: -8px;
@@ -174,10 +166,6 @@ const TLDR = styled.div`
 
 const HomeWrapper = styled.div`
   padding: 20px;
-`;
-const iconsize = styled.button`
-  height: 200px;
-  width: 200px;
 `;
 
 const ProfileButton = styled.button`
@@ -218,19 +206,6 @@ const TLDRBtn = styled.button`
   }
 `;
 
-const Button1 = styled.button`
-  background-color: transparent;
-  color: black;
-  :hover {
-    cursor: pointer;
-  }
-  vertical-align: middle;
-  padding: 2px;
-  align-self: left;
-  width: 150px;
-  height: 150px;
-`;
-
 const ProfileButtons = styled.div`
   display: flex;
   flex-direction: column;
@@ -251,29 +226,11 @@ const ItemDetailsImage = styled.div`
   border: none;
   transition: all 0.4s ease-in-out;
   z-index: 1;
-
-  /* &:hover {
-    transform: scale(1.4);
-  } */
-`;
-
-const SellerImg = styled.img`
-  height: 25px;
-  width: 25px;
-  border-radius: 25px;
-  margin-right: 10px;
-`;
-
-const DaveImg = styled.img`
-  height: 300px;
-  margin: 15px;
 `;
 
 const IntroStatement = styled.div`
   margin-bottom: 20px;
 `;
-
-const selfImg = styled.img``;
 
 const NameText = styled.text`
   color: #00848e;
