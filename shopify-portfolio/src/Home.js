@@ -198,8 +198,8 @@ function Home() {
           little bit of my thinking. It was super fun to put this together!
         </body>
         <body>
-          Oh, and I made a bit of a subtle design choice with the links to my
-          stuff kind of enmeshed in my profile picture, so here it is again!
+          I made a bit of a subtle design choice by placing my github, linkedIn
+          and twitter links into my profile picture, so here they are again -
         </body>
         <FinalButtons>
           <ProfileButtonInSentence onClick={goToGitHub}>
