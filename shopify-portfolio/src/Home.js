@@ -169,25 +169,20 @@ function Home() {
             >
               SpeechSynthesis framework
             </a>
-            ,
-            <strike> which is a feature of modern desktop browsers only</strike>{" "}
-            - yeah, I was wrong here. There are a few differences in player
-            permissions and voices arrays, but it totally works on mobile.
-            Coding up that version as we speak.
+            . There are a few differences in player permissions and voices
+            arrays, but it totally works on mobile.
           </li>
 
           <li>
-            It's a little incomplete. There can be some weird behaviour because
-            of state jumps. However, considering that the assigned challenges
-            were limited in scope, I figure a bit of incompleteness for the
-            application project is acceptable.
+            It's a little incomplete. However, considering that the assigned
+            challenges were limited in scope, I figure a bit of incompleteness
+            for the application project is acceptable.
           </li>
           <li>
             This will be my graduation project for my Bootcamp, so I intend to
             expand it quite a bit! There's no reason I can't add more languages,
-            or explore searching the text, or add meta-data from others APIs,
-            etc. I'll be graduating at the end of November, so I'll be adding to
-            this project on ongoing basis!
+            or add meta-data from others APIs, etc. I'll be graduating at the
+            end of November, so I'll be adding to this project on ongoing basis!
           </li>
         </ol>
       </Tidbits>
