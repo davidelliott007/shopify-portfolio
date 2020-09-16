@@ -81,7 +81,7 @@ function Home() {
             on the nose, as it were. Let me explain....
           </body>
           <body>
-            On September 25th, I attended a great webinar that Paul and his
+            On August 25th, I attended a great webinar that Paul and his
             colleagues delivered. I got to meet some of the Shopify team, and
             hear about the day-to-day at Shopify, and it convinced me that I
             should apply for the January internship program. Shopify seems to be
