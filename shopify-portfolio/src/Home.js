@@ -17,7 +17,7 @@ function goToNetlifyProject() {
 
 function goToGitHubProject() {
   window.location.href =
-    "https://github.com/davidelliott007/shopify-podcast-translator/tree/Redux-Branch/";
+    "https://github.com/davidelliott007/shopify-podcast-translator/tree/fixed-speech-synth";
 }
 
 function goToGitHub() {
