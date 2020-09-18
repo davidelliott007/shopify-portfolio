@@ -383,13 +383,12 @@ const ItemDetailsImage = styled.div`
   height: 300px;
   max-width: 800px;
 
-  background-position: right;
+  background-position: top-right;
   background-size: cover;
   background-repeat: no-repeat;
 
   border-radius: 15px;
   border: none;
-  transition: all 0.1s ease-in-out;
   z-index: 1;
 
   @media (max-width: 800px) {

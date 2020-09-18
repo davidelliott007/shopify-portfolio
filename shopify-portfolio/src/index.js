@@ -4,6 +4,7 @@ import "./index.css";
 import App from "./App";
 import * as serviceWorker from "./serviceWorker";
 
+document.title = "David Elliott - Shopify Project";
 ReactDOM.render(
   <React.StrictMode>
     <App />
