@@ -161,16 +161,21 @@ function Home() {
             written.{" "}
           </li>
           <li>
-            The app uses the{" "}
-            <a
-              href={
-                "https://developer.mozilla.org/en-US/docs/Web/API/SpeechSynthesis"
-              }
-            >
-              SpeechSynthesis framework
-            </a>
-            . There are a few differences in player permissions and voices
-            arrays, but it totally works on mobile.
+            <strike>
+              The app uses the{" "}
+              <a
+                href={
+                  "https://developer.mozilla.org/en-US/docs/Web/API/SpeechSynthesis"
+                }
+              >
+                SpeechSynthesis framework
+              </a>
+              . There are a few differences in player permissions and voices
+              arrays, but it totally works on mobile.
+            </strike>{" "}
+            SpeechSynthesis is increasingly unreliable on mobile, so I switched
+            to Google Text to Speech, so I can use customized female and male
+            voices with Quebec accents! Very cool!
           </li>
 
           <li>
