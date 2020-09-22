@@ -17,7 +17,7 @@ function goToNetlifyProject() {
 
 function goToGitHubProject() {
   window.location.href =
-    "https://github.com/davidelliott007/shopify-podcast-translator/tree/uuuid-tracking";
+    "https://github.com/davidelliott007/shopify-podcast-translator/tree/ver-1";
 }
 
 function goToGitHub() {
