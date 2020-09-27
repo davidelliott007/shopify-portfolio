@@ -156,38 +156,32 @@ function Home() {
         Some other interesting tidbits behind the making of this app -
         <ol>
           <li>
-            I'm running my own Node Express server to serve out the data. I have
-            a bunch of juicy JSON files from all the transcribing code I've
-            written.{" "}
+            I was running my own Node Express server to serve out the data (the
+            server is still up). I have a bunch of juicy JSON files from all the
+            transcribing code I've written. However, I've switched to a bit
+            bucket on Linode to serve out the JSON along with the individual
+            translated MP3 files because I'm about to tweet this project out and
+            I neeed a more robust solution.
           </li>
           <li>
-            <strike>
-              The app uses the{" "}
-              <a
-                href={
-                  "https://developer.mozilla.org/en-US/docs/Web/API/SpeechSynthesis"
-                }
-              >
-                SpeechSynthesis framework
-              </a>
-              . There are a few differences in player permissions and voices
-              arrays, but it totally works on mobile.
-            </strike>{" "}
-            SpeechSynthesis is increasingly unreliable on mobile, so I switched
-            to Google Text to Speech, so I can use customized female and male
-            voices with Quebec accents! Very cool!
+            I use the Google Text to Speech API, so I can use customized female
+            and male voices with Quebec accents. I switched from the
+            SpeechSynthesis framework because the voice results were too variant
+            across browsers and devices.
           </li>
 
           <li>
-            It's a little incomplete. However, considering that the assigned
-            challenges were limited in scope, I figure a bit of incompleteness
-            for the application project is acceptable.
+            <strike>It's a little incomplete.</strike> Yeah, as far an an MVP
+            goes, it's actually getting there now. Since I submitted it in early
+            September I've been hacking away at it. The delta from initial
+            submission to current version is massive at this point. That's what
+            daily work gets ya!
           </li>
           <li>
             This will be my graduation project for my Bootcamp, so I intend to
             expand it quite a bit! There's no reason I can't add more languages,
-            or add meta-data from others APIs, etc. I'll be graduating at the
-            end of November, so I'll be adding to this project on ongoing basis!
+            or add meta-data from others APIs, etc. I'll be graduating on
+            November 18th, so I'll be adding to this project on ongoing basis.
           </li>
         </ol>
       </Tidbits>
