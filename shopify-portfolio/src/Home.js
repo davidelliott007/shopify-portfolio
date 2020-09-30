@@ -137,6 +137,11 @@ function Home() {
               from (2) to produce a bilingual JSON array.
             </li>
             <li>Use that array as a navigation instrument for the mp3.</li>
+            <li>
+              Use that array to send the french text{" "}
+              <HighlightedWord>back</HighlightedWord> to the Google Speech API
+              to produce inidividual french mp3s.
+            </li>
             <li>Wire it all up in React and Redux.</li>
           </ol>
           <body>
@@ -235,6 +240,11 @@ const Pitch = styled.div`
 
 const Tidbits = styled.div`
   max-width: 750px;
+`;
+
+const HighlightedWord = styled.span`
+  font-weight: bold;
+  color: black;
 `;
 
 const FinalStandOut = styled.div`
