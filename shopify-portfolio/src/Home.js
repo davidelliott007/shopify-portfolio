@@ -39,8 +39,19 @@ function Home() {
     <HomeWrapper>
       <IntroStatement>
         <displayXlarge>
-          Hello there! I'm <NameText> Dave Elliott,</NameText> and I'm
-          determined to start an internship at Shopify in January.
+          Hello there! I'm <NameText> Dave Elliott,</NameText> and I'm a Full
+          Stack Web Developer, pivoting from a rewarding career in adult
+          learning and leadership to a love of code. For most of my life, I've
+          been working at the intersection of technology at the arts. I've
+          studied filmmaking, digital design, acting, adult education, and
+          leadership. My career has been based on pursuing jobs that involve
+          from deep work, and intense collaboration. I have a lot of expeirence
+          building narratives and collaborating with unqiue stakeholders. I have
+          been coding for years out of passion and curiosioty, but at the start
+          of 2020 I decided to become a full-time developer. I graudated from
+          the Full Stack Bootcamp at Concordia Unversity in November, and since
+          August, I've been supplmenting my full time job at as a Training
+          Manager at Telus with part-time development work at Telus Digital.
         </displayXlarge>
       </IntroStatement>
       <ItemDetailsImage image_source={DaveSrc} smaller_source={SmallerSource}>
