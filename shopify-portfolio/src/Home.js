@@ -38,22 +38,30 @@ function Home() {
   return (
     <HomeWrapper>
       <IntroStatement>
-        <displayXlarge>
+        <displayMedium>
           Hello there! I'm <NameText> Dave Elliott,</NameText> and I'm a Full
           Stack Web Developer, pivoting from a rewarding career in adult
-          learning and leadership to a love of code. For most of my life, I've
-          been working at the intersection of technology at the arts. I've
-          studied filmmaking, digital design, acting, adult education, and
-          leadership. My career has been based on pursuing jobs that involve
-          from deep work, and intense collaboration. I have a lot of expeirence
-          building narratives and collaborating with unqiue stakeholders. I have
-          been coding for years out of passion and curiosioty, but at the start
-          of 2020 I decided to become a full-time developer. I graudated from
-          the Full Stack Bootcamp at Concordia Unversity in November, and since
-          August, I've been supplmenting my full time job at as a Training
+          learning and leadership to a love of code.
+        </displayMedium>
+        <IntroPitch>
+          For most of my life, I've been working at the intersection of
+          technology at the arts. I've studied filmmaking, digital design,
+          acting, adult education, and leadership. My career has been based on
+          pursuing jobs that involve from deep work, and intense collaboration.
+          I have a lot of expeirence building narratives and collaborating with
+          unqiue stakeholders.
+        </IntroPitch>
+        <IntroPitch>
+          I have been coding for years out of passion and curiosioty, but at the
+          start of 2020 I decided to become a full-time developer. I graudated
+          from the Full Stack Bootcamp at Concordia Unversity in November.
+        </IntroPitch>
+        <IntroPitch>
+          Since August, I've been supplmenting my full time job at as a Training
           Manager at Telus with part-time development work at Telus Digital.
-        </displayXlarge>
+        </IntroPitch>
       </IntroStatement>
+
       <ItemDetailsImage image_source={DaveSrc} smaller_source={SmallerSource}>
         <ProfileButtons>
           <ProfileButton onClick={goToGitHub}>
@@ -87,26 +95,6 @@ function Home() {
           </displayMedium>
         </TLDR>
         <Details>
-          <body>
-            Ok, so that stuff up there is literally a bold statement, and a bit
-            on the nose, as it were. Let me explain....
-          </body>
-          <body>
-            On August 25th, I attended a great webinar that Paul and his
-            colleagues delivered. I got to meet some of the Shopify team, and
-            hear about the day-to-day at Shopify, and it convinced me that I
-            should apply for the January internship program. Shopify seems to be
-            the kind place where I can make an important contribution while my
-            skills are growing, and as someone who is in the middle of his
-            career, I'm super interested in joining a culture that invests in
-            people.
-          </body>
-          <body>
-            I've been taking a coding bootcamp class at Concordia since March,
-            and we are 80% of the way through. When Paul invited us to apply, I
-            didn't have any completed personal projects, so I decided - what the
-            heck. See what you can make, David.
-          </body>
           <body>
             Supporting the Podcast industry is a passion of mine, so I thought I
             would take the great Shopify Masters podcast and see if I could add
@@ -187,17 +175,10 @@ function Home() {
           </li>
 
           <li>
-            <strike>It's a little incomplete.</strike> Yeah, as far an an MVP
-            goes, it's actually getting there now. Since I submitted it in early
-            September I've been hacking away at it. The delta from initial
-            submission to current version is massive at this point. That's what
-            daily work gets ya!
-          </li>
-          <li>
-            This will be my graduation project for my Bootcamp, so I intend to
-            expand it quite a bit! There's no reason I can't add more languages,
-            or add meta-data from others APIs, etc. I'll be graduating on
-            November 18th, so I'll be adding to this project on ongoing basis.
+            This is my graduation project for my Bootcamp, so I intend to expand
+            it quite a bit! There's no reason I can't add more languages, or add
+            meta-data from others APIs, etc. I'll be graduating on November
+            18th, so I'll be adding to this project on ongoing basis.
           </li>
         </ol>
       </Tidbits>
@@ -231,6 +212,12 @@ function Home() {
   );
 }
 
+const IntroPitch = styled.div`
+  color: black;
+  padding-top: 5px;
+  font-size: 15px;
+`;
+
 const FinalButtons = styled.div`
   display: flex;
   flex-direction: row;
@@ -251,6 +238,7 @@ const Pitch = styled.div`
 
 const Tidbits = styled.div`
   max-width: 750px;
+  padding-top: 5px;
 `;
 
 const HighlightedWord = styled.span`
@@ -276,7 +264,6 @@ const StandOutBox = styled.div`
 
 const Details = styled.div`
   padding-top: 20px;
-  margin-left: -8px;
 `;
 
 const TLDR = styled.div`
@@ -368,16 +355,9 @@ const TLDRBtnSmaller = styled.button`
   color: #00848e;
   background-color: transparent;
   font-size: 22px;
-  line-height: 34px;
   font-weight: 500;
 
-  padding-left: 2px;
-  padding-right: 2px;
-  border: 1px dashed #003135;
-  padding-bottom: 2px;
-  padding-top: 0px;
-  margin-right: 5px;
-  margin-left: 5px;
+  border: transparent;
 
   @media (max-width: 800px) {
     font-size: 27px;
